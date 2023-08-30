@@ -18,18 +18,21 @@ console.log("[Question #1]: ", initialValue);
  * Declare a let variable named result and set its initial value to 0.
  */
 let result = 0;
+console.log("[Question #2]: ", result);
 /**
  * Question 3
  * Using an if statement, check if initialValue is greater than 5. If true, set result to initialValue times 2.
  */
 if (initialValue > 5) {
   result = initialValue * 2;
+  console.log("[Question #3]: ", result);
 }
 /**
  * Question 4
  * Declare an array named numbers containing the first five prime numbers.
  */
 const numbers = [2, 3, 5, 7, 11];
+console.log("[Question #4]:", numbers);
 /**
  * Question 5
  * If the fifth value in the numbers array is greater than initialValue, add 5 to result.
@@ -37,6 +40,7 @@ const numbers = [2, 3, 5, 7, 11];
 if (numbers[4] > initialValue) {
   result += 5;
 }
+console.log("[Question #5]: ", result);
 /**
  * Question 6
  * Declare an object named settings with two properties: theme set to "light" and notifications set to true.
@@ -45,6 +49,7 @@ const settings = {
   theme: "light",
   notifications: true
 };
+console.log("[Question #6]: ", settings);
 /**
  * Question 7
  * Using an if statement, if notifications property is true, add 3 to result.
@@ -52,11 +57,13 @@ const settings = {
 if (settings.notifications === true) {
   result += 3;
 }
+console.log("[Question #7]: ", result);
 /**
  * Question: 8
  * Change the theme property of settings to "dark".
  */
 settings.theme = "dark";
+console.log("[Question #8]: ", settings);
 /**
  * Question: 9
  * If theme property is "dark" and result is less than 30, push the number 13 to the numbers array.
@@ -64,11 +71,13 @@ settings.theme = "dark";
 if (settings.theme === "dark" && result < 30) {
   numbers.push(13);
 }
+console.log("[Question #9]: ", numbers);
 /**
  * Question: 10
  * Declare a let variable named index and set its value to 4.
  */
 let index = 4;
+console.log("[Question #10]:", index);
 /**
  * Question: 11
  * If the value at the index position in the numbers array is equal to 7, multiply result by 2.
@@ -77,6 +86,7 @@ let index = 4;
 if ((index === numbers[index]) === 7) {
   result * 2;
 }
+console.log("[Question #11]:", result);
 /**
  * Question 12
  * Change the value of index to the first position in the numbers array that has a value of 13.
@@ -84,6 +94,7 @@ if ((index === numbers[index]) === 7) {
 if (numbers.includes(13)) {
   index = 13;
 }
+console.log("[Question #12]: ", index);
 
 /**
  * Question 13
@@ -92,6 +103,7 @@ if (numbers.includes(13)) {
 if (index % 2 === 1) {
   settings.notifications = false;
 }
+console.log("[Question #13]: ", settings);
 
 /**
  * Question 14
@@ -101,6 +113,7 @@ if (index % 2 === 1) {
 if (settings.notifications === false) {
   result = result - initialValue;
 }
+console.log("[Question #14]: ", result);
 
 /**
  * Question 15
@@ -110,6 +123,7 @@ if (settings.notifications === false) {
 if (result < 10) {
   numbers.push(0, 0, 0);
 }
+console.log("[Question #15]: ", numbers);
 /**
  * Question 16
  * If the numbers array contains more than 7 elements, update the theme property of settings to "blue".
@@ -117,12 +131,14 @@ if (result < 10) {
 if (numbers.length > 7) {
   settings.theme = "blue";
 }
+console.log("[Question #16]: ", settings);
 
 /**
  * Question 17
  * Declare a const named multiplier with a value of 5.
  */
 const multiplier = 5;
+console.log("[Question #17]: ", multiplier);
 /**
  * Question 18
  * If the multiplier is a multiple of initialValue, assign the product of multiplier and result to result.
@@ -130,6 +146,7 @@ const multiplier = 5;
 if (initialValue % multiplier == 0) {
   result += multiplier;
 }
+console.log("[Question #18]: ", result);
 
 /**
  * Question 19
@@ -139,6 +156,7 @@ const userData = {
   name: "Alex",
   score: result
 };
+console.log("[Question #19]: ", userData);
 /**
  * Question 20
  * If score is greater than 50, add a new property to userData named membership and set its value to "gold".
@@ -146,6 +164,7 @@ const userData = {
 if (userData.score > 50) {
   userData.memberShip = "gold";
 }
+console.log("[Question #20]: ", userData);
 
 /**
  * Question 21
@@ -154,6 +173,7 @@ if (userData.score > 50) {
 if (userData.name.charAt(0) === "A") {
   userData.score += 10;
 }
+console.log("[Question #21]: ", userData);
 
 /**
  * Question 22
@@ -161,6 +181,7 @@ if (userData.name.charAt(0) === "A") {
  */
 
 numbers.push(userData.score);
+console.log("[Question #22]: ", numbers);
 
 /**
  * Question 23.
@@ -169,6 +190,7 @@ numbers.push(userData.score);
 if ((numbers.length - 0) % 2 === 1) {
   userData.hasBonus = true;
 }
+console.log("[Question #23]: ", userData);
 
 /**
  * Question 24
@@ -177,6 +199,7 @@ if ((numbers.length - 0) % 2 === 1) {
 if (settings.theme !== "red") {
   userData.score += 15;
 }
+console.log("[Question #24]: ", settings);
 /**
  * Question 25
  * If userData has a hasBonus property and its value is true, set result to the sum of result and the score property of userData.
@@ -184,3 +207,4 @@ if (settings.theme !== "red") {
 if ("hasBonus" in userData && userData.hasBonus === true) {
   result = result + userData.score;
 }
+console.log("[Question #25]: ", result);
