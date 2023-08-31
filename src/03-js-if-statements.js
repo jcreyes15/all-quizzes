@@ -120,7 +120,7 @@ console.log("[Question #14]: ", result);
  * If initialValue minus result is less than 10, add an array containing three zeros to the end of the numbers array.
  */
 
-if (result < 10) {
+if (initialValue - result < 10) {
   numbers.push(0, 0, 0);
 }
 console.log("[Question #15]: ", numbers);
