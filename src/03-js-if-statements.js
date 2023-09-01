@@ -91,9 +91,7 @@ console.log("[Question #11]:", result);
  * Question 12
  * Change the value of index to the first position in the numbers array that has a value of 13.
  */
-if (numbers.indexOf(13)) {
-  index = 13;
-}
+index = numbers.indexOf(13);
 console.log("[Question #12]: ", index);
 
 /**
@@ -185,7 +183,7 @@ console.log("[Question #22]: ", numbers);
  * Question 23.
  * If the last element of the numbers array is odd, add a hasBonus property to userData and set its value to true.
  */
-if ((numbers.length - 0) % 2 === 1) {
+if (numbers[numbers.length - 1] % 2 !== 0) {
   userData.hasBonus = true;
 }
 console.log("[Question #23]: ", userData);
