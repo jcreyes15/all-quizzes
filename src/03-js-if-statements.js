@@ -208,3 +208,5 @@ if ("hasBonus" in userData && userData.hasBonus === true) {
   result = result + userData.score;
 }
 console.log("[Question #25]: ", result);
+
+// End.
