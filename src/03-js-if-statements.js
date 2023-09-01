@@ -91,7 +91,7 @@ console.log("[Question #11]:", result);
  * Question 12
  * Change the value of index to the first position in the numbers array that has a value of 13.
  */
-if (numbers.includes(13)) {
+if (numbers.indexOf(13)) {
   index = 13;
 }
 console.log("[Question #12]: ", index);
@@ -120,7 +120,7 @@ console.log("[Question #14]: ", result);
  * If initialValue minus result is less than 10, add an array containing three zeros to the end of the numbers array.
  */
 
-if (result < 10) {
+if (initialValue - result < 10) {
   numbers.push(0, 0, 0);
 }
 console.log("[Question #15]: ", numbers);
@@ -144,7 +144,7 @@ console.log("[Question #17]: ", multiplier);
  * If the multiplier is a multiple of initialValue, assign the product of multiplier and result to result.
  */
 if (initialValue % multiplier == 0) {
-  result += multiplier;
+  result = multiplier * result;
 }
 console.log("[Question #18]: ", result);
 
@@ -161,9 +161,7 @@ console.log("[Question #19]: ", userData);
  * Question 20
  * If score is greater than 50, add a new property to userData named membership and set its value to "gold".
  */
-if (userData.score > 50) {
-  userData.memberShip = "gold";
-}
+userData.score > 50 ? (userData.memberShip = "gold") : "false";
 console.log("[Question #20]: ", userData);
 
 /**
@@ -208,5 +206,3 @@ if ("hasBonus" in userData && userData.hasBonus === true) {
   result = result + userData.score;
 }
 console.log("[Question #25]: ", result);
-
-// End.
