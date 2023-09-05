@@ -119,7 +119,7 @@ console.log("[Question #14]: ", result);
  */
 
 if (initialValue - result < 10) {
-  numbers.push(0, 0, 0);
+  numbers.push[(0, 0, 0)];
 }
 console.log("[Question #15]: ", numbers);
 /**
@@ -203,4 +203,4 @@ console.log("[Question #24]: ", settings);
 if ("hasBonus" in userData && userData.hasBonus === true) {
   result = result + userData.score;
 }
-console.log("[Question #25]: ", result);
+console.log("[Question #25]: ", userData);
